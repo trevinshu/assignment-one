@@ -5,6 +5,7 @@ import heading from '../components/ui/header';
 import tagline from '../components/ui/tagline';
 import appLogo from '../components/ui/logo';
 import button from '../components/ui/button';
+import Router from '../routes/router';
 
 const newPage = (e) => {
   e.preventDefault();

@@ -2,6 +2,7 @@ import link from '../components/ui/link';
 import heading from '../components/ui/header';
 import tagline from '../components/ui/tagline';
 import appLogo from '../components/ui/logo';
+import Router from '../routes/router';
 
 const newPage = (e) => {
   e.preventDefault();
