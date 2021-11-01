@@ -2,6 +2,12 @@ import link from '../components/ui/link';
 import heading from '../components/ui/header';
 import tagline from '../components/ui/tagline';
 import appLogo from '../components/ui/logo';
+
+const newPage = (e) => {
+  e.preventDefault();
+  Router(e.currentTarget.dataset.path);
+};
+
 const home = () => {
   const section = document.createElement('div');
   section.classList.add('homeDiv');
