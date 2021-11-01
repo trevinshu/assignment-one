@@ -4,12 +4,6 @@ import tagline from '../components/ui/tagline';
 import appLogo from '../components/ui/logo';
 import errorLogo from '../components/ui/error';
 import link from '../components/ui/link';
-import Router from '../routes/router';
-
-const newPage = (e) => {
-  e.preventDefault();
-  Router(e.currentTarget.dataset.path);
-};
 
 const pageNotFound = () => {
   const errorContainer = document.createElement('div');
