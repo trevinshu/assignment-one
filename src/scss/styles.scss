@@ -1,0 +1,194 @@
+@use 'reboot';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #212529;
+
+  button {
+    all: unset;
+  }
+  .homeDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+    .appLogo {
+      color: #6320ee;
+      width: 25%;
+    }
+    .heading {
+      font-size: 40px;
+      font-weight: 700;
+      color: #f2f2f2;
+    }
+
+    .tagline {
+      font-weight: 300;
+      font-size: 20px;
+      color: #f2f2f2;
+      margin-bottom: 10px;
+    }
+
+    .homeBtn {
+      background-color: #6320ee;
+      padding: 20px;
+      border-radius: 10px;
+      color: #f2f2f2;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .homeBtn:hover {
+      background-color: darken($color: #6320ee, $amount: 15);
+    }
+  }
+
+  .todoNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lighten($color: #212529, $amount: 15);
+    color: #f2f2f2;
+    margin-bottom: 30px;
+
+    .todoHeading {
+      font-size: 45px;
+      font-weight: 700;
+      margin-bottom: 5px 0;
+    }
+    .todoTagline {
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+    .appLogo {
+      width: 20%;
+      color: #6320ee;
+      margin: 5px;
+    }
+  }
+
+  .todoItem {
+    color: white;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: lighten($color: #212529, $amount: 15);
+
+    h2 {
+      font-weight: 700;
+      font-size: 25px;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+  }
+
+  .category {
+    text-transform: capitalize;
+  }
+
+  .school {
+    border-left: solid 15px blue;
+  }
+
+  .tech {
+    border-left: solid 15px green;
+  }
+
+  .career {
+    border-left: solid 15px red;
+  }
+
+  .shopping {
+    border-left: solid 15px yellow;
+  }
+
+  .entertainment {
+    border-left: solid 15px pink;
+  }
+
+  .errorContainer {
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: lighten($color: #212529, $amount: 15);
+      color: #f2f2f2;
+      margin-bottom: 30px;
+    }
+    .appLogo {
+      width: 20%;
+      color: #6320ee;
+      margin-top: 10px;
+    }
+
+    .errorHeading {
+      font-size: 45px;
+      font-weight: 700;
+      margin: 5px 0;
+    }
+
+    .errorTagline {
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+
+    .contentContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .errorLogo {
+        color: red;
+        width: 60%;
+      }
+
+      .errorHeadingMsg {
+        font-size: 45px;
+        font-weight: 700;
+        margin: 5px 0;
+        color: #f2f2f2;
+      }
+
+      .errorTaglineMsg {
+        font-weight: 400;
+        margin-bottom: 15px;
+        color: #f2f2f2;
+      }
+
+      .errorBtn {
+        background-color: #6320ee;
+        padding: 20px;
+        border-radius: 10px;
+        color: #f2f2f2;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      .errorBtn:hover {
+        background-color: darken($color: #6320ee, $amount: 15);
+      }
+    }
+  }
+
+  footer {
+    .addBtn {
+      background-color: #6320ee;
+      height: 50px;
+      width: 100px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      color: white;
+      text-align: center;
+      border-radius: 10px;
+      text-transform: uppercase;
+    }
+  }
+}
