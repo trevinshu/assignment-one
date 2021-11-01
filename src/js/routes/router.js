@@ -14,7 +14,7 @@ const Router = function (pathname) {
 
   window.history.pushState({}, pathname, window.location.origin + pathname);
   if (isValidRoute === undefined) {
-    app.appendChild(notFound());
+    app.append(notFound());
   } else {
     app.appendChild(routes[window.location.pathname]());
   }
